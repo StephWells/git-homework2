@@ -25,4 +25,24 @@ print("Tempurature:", "F=", ftemp3, "C=", celsius3)
 print("Tempurature:", "F=", ftemp4, "C=", celsius4)
 
 
+#Solution 3
+numbers = input("Hi, please Input three integers seperated by space so that I may calculate their sum and average.")
+numberList = numbers.split()
+
+print("\n")
+
+#Calculating sum of entered numbers
+sum1 = 0
+for num in numberList:
+    sum1 += int(num)
+print("The sum is", sum1)
+
+
+average = sum1 / len(numberList)
+print("The average is", average)
+
+
+
+
+
 
