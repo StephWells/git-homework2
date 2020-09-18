@@ -11,18 +11,18 @@ for x in range (0,6):
 
 #Solution 2
 
-ftemp1=(-40)
-ftemp2=(0)
-ftemp3=(40)
-ftemp4=(100)
-celsius1=int((ftemp1-32)*5/9)
-celsius2=int((ftemp2-32)*5/9)
-celsius3=int((ftemp3-32)*5/9)
-celsius4=int((ftemp4-32)*5/9)
-print("Tempurature:", "F=", ftemp1, "C=", celsius1)
-print("Tempurature:", "F=", ftemp2, "C=", celsius2)
-print("Tempurature:", "F=", ftemp3, "C=", celsius3)
-print("Tempurature:", "F=", ftemp4, "C=", celsius4)
+ctemp1=(-40)
+ctemp2=(0)
+ctemp3=(40)
+ctemp4=(100)
+ftemp1=int((9/5*ctemp1)+32)
+ftemp2=int((9/5*ctemp2)+32)
+ftemp3=int((9/5*ctemp3)+32)
+ftemp4=int((9/5*ctemp4)+32)
+print("Tempurature:", "C=", ctemp1, "F=", ftemp1)
+print("Tempurature:", "C=", ctemp2, "F=", ftemp2)
+print("Tempurature:", "C=", ctemp3, "F=", ftemp3)
+print("Tempurature:", "C=", ctemp4, "F=", ftemp4)
 
 
 #Solution 3
@@ -35,12 +35,13 @@ print("\n")
 sum1 = 0
 for num in numberList:
     sum1 += int(num)
-print("The sum is", sum1)
+print(f'The sum is {sum1: ,d}')
 
 
 #Calculating average of entered numbers
 average = sum1 / len(numberList)
-print("The average is", "{:.2f}".format(average))
+print("The average is", "{:,.2f}".format(average))
+
 
 
 
