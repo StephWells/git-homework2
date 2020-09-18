@@ -38,8 +38,9 @@ for num in numberList:
 print("The sum is", sum1)
 
 
+#Calculating average of entered numbers
 average = sum1 / len(numberList)
-print("The average is", average)
+print("The average is", "{:.2f}".format(average))
 
 
 
